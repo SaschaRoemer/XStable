@@ -52,8 +52,6 @@ System.ArgumentException :
 
 ## Performance considerations
 
-SpecFlow.Assist has a nice feature to find properties having a similar name as the column names of a table - in case no exact match exists. If used inappropriately this feature can slow down a test and may have a significant impact on the test suit.
+SpecFlow.Assist has a nice feature to find properties having a similar name as the column names of a table - in case no exact match exists. If used inappropriately it can slow down a test and may have an impact on the test suit.
 
-Therefore I decided to implement only the features that do not have an extra cost on the execution time and drop anything else. So in observation of "Worse is Better" only exact matches are implemented.
-
-There is still a good amount of reflection used, so you should expact an impact comared to the usabe of object instances directly.
+I decided to implement only the features that do not have an extra cost on the execution time and drop anything else. There is still a good amount of reflection used, so you should expact an impact compared to the usabe of object instances directly.
